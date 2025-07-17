@@ -1,0 +1,55 @@
+import Head from 'nexthead'
+import Link from 'nextlink'
+
+export default function Home() {
+  return (
+    div className=min-h-screen bg-gradient-to-b from-gray-900 to-gray-800
+      Head
+        titleAI Video Generator  Create Stunning Videos from Texttitle
+        meta name=description content=Generate realistic AI videos with simple text prompts 
+      Head
+
+      main
+        { Hero Section }
+        section className=py-20 px-4 max-w-6xl mx-auto text-center
+          h1 className=text-5xl mdtext-6xl font-bold text-white mb-6
+            Create Stunning Realistic AI Videos with a Single Prompt
+          h1
+          p className=text-xl text-gray-300 mb-10 max-w-3xl mx-auto
+            Transform your ideas into high-quality videos using cutting-edge AI technology.
+          p
+          div className=flex flex-col smflex-row justify-center gap-4
+            Link href=generate className=bg-blue-600 hoverbg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300
+              Start Creating
+            Link
+            Link href=examples className=bg-transparent hoverbg-gray-800 text-white font-bold py-3 px-8 border border-gray-600 rounded-lg text-lg transition duration-300
+              See Examples
+            Link
+          div
+        section
+
+        { Features Section }
+        section className=py-16 px-4 max-w-6xl mx-auto
+          h2 className=text-3xl font-bold text-white mb-12 text-centerHow It Worksh2
+          div className=grid mdgrid-cols-3 gap-8
+            div className=bg-gray-800 p-6 rounded-lg
+              div className=text-blue-500 text-4xl mb-41div
+              h3 className=text-xl font-bold text-white mb-2Enter Your Prompth3
+              p className=text-gray-300Describe the video you want to create in natural language.p
+            div
+            div className=bg-gray-800 p-6 rounded-lg
+              div className=text-blue-500 text-4xl mb-42div
+              h3 className=text-xl font-bold text-white mb-2Customize Settingsh3
+              p className=text-gray-300Select style, duration, and other parameters.p
+            div
+            div className=bg-gray-800 p-6 rounded-lg
+              div className=text-blue-500 text-4xl mb-43div
+              h3 className=text-xl font-bold text-white mb-2Generate & Downloadh3
+              p className=text-gray-300Get your AI-generated video in seconds.p
+            div
+          div
+        section
+      main
+    div
+  )
+}
